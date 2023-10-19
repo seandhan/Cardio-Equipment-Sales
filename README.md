@@ -11,3 +11,6 @@ The key variables in the data relate to customer demographics and treadmill usag
 1. How do customer demographics (age, gender, education, marital status) compare across purchasers of the 3 treadmill models?
 2. Is there a relationship between customer income level and the treadmill model purchased?
 3. Do trends emerge in the expected usage frequencies and weekly mileage across the 3 product models?
+
+## Analysis
+Click [HERE](https://github.com/seandhan/CardioEquipmentSales/blob/main/CardioEquipmentSalesEDA.ipynb) to view the analysis.
