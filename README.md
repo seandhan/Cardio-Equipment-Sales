@@ -52,7 +52,7 @@ CardioGood, a renowned treadmill manufacturer, offers a diversified range of tre
 
 ## Data Source
 
-Data Source: [CardioEqptSales.csv](link)
+Data Source: [CardioEqptSales.csv](https://github.com/seandhan/Cardio-Equipment-Sales/blob/main/CardioEqptSales.csv)
 
 ----
 
