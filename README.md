@@ -1,6 +1,10 @@
-[![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/made-with-markdown.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/powered-by-oxygen.svg)](https://forthebadge.com)
+<p align="center">
+  <img src="https://forthebadge.com/images/badges/made-with-python.svg" />&nbsp;&nbsp;&nbsp;
+  <img src="https://forthebadge.com/images/badges/made-with-markdown.svg" />&nbsp;&nbsp;&nbsp;
+  <img src="https://forthebadge.com/images/badges/powered-by-oxygen.svg" />&nbsp;&nbsp;
+</p>
+
+
 
 <h1 align="center"> Cardio Equipment Sales 🏃</h1>
 
