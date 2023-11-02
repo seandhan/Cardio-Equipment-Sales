@@ -1,156 +1,138 @@
-# Cardio Equipment Sales EDA
+[![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-markdown.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/powered-by-oxygen.svg)](https://forthebadge.com)
+
+<h1 align="center"> Cardio Equipment Sales 🏃</h1>
+
+<p align="center">The primary objective of this analysis is to better understand CardioGood's customers by examining customer demographics, identifying relationships between customer characteristics and product selections, and studying customer usage and mileage statistics to aid marketing and product development strategies.</p>
+
 ---
-## Project Description
+
+## 📝 Table of Contents
+
+- [🤓 Description](#description)
+- [💻 Dataset Overview](#dataset-overview)
+- [📊 Exploratory Data Analysis](#exploratory-data-analysis)
+- [🚀 Business Questions](#business-questions)
+- [✨ Recommendations](#recommendations)
+- [📗 Notebooks](#notebooks)
+- [📧 Contact Information](#contact-information)
+
+## 🤓 Description <a name = "description"></a>
 
 CardioGood is a leading treadmill manufacturer offering a range of models to meet varying customer needs. This sales dataset provides insights into CardioGood's customers across three treadmill products: TM195, TM498, and TM798. It includes customer demographics such as age, gender, education level, and marital status, along with usage information covering the average expected weekly usage frequency and mileage. Customers also provide a self-assessed fitness score.
 
-The primary objective of this analysis is to better understand CardioGood's customers by examining customer demographics, identifying relationships between customer characteristics and product selections, and studying customer usage and mileage statistics to aid marketing and product development strategies.
+`Objectives`
 
-----
-
-## Table of Contents
-
-- [Skills and Tools Used](#skills-and-tools-used)
-- [Project Overview](#project-overview)
-- [Project Objectives](#project-objectives)
-- [Data Source](#data-source)
-- [Data Dictionary](#data-dictionary)
-- [Analysis](#Analysis)
-- [Data Exploration and Understanding](#data-exploration-and-understanding)
-- [Key Observations](#Key-Observations)
-- [Recommendations](#Recommendations)
-- [Contact Information](#contact-information)
-----
-## Skills and Tools Used
-
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Scipy
-- Jupyter Notebook
-- Data visualization
-- Statistical analysis
-
+1. **How do customer demographics (age, gender, education, marital status) compare across purchasers of the 3 treadmill models?**
+2. **Is there a relationship between customer income level and the treadmill model purchased?**
+3. **Do trends emerge in the expected usage frequencies and weekly mileage across the 3 product models?**
 ----
 
 
-## Project Overview
+## 💻 Dataset Overview <a name = "dataset-overview"></a>
 
-CardioGood, a renowned treadmill manufacturer, offers a diversified range of treadmill models tailored to meet the unique needs of its customers. In this comprehensive sales analysis project, we delve into CardioGood's customer data across three distinct treadmill products: the TM195, TM498, and TM798. This dataset encompasses a wealth of invaluable information, including customer demographics such as age, gender, education level, and marital status. Furthermore, it provides insights into usage patterns, including the average expected weekly usage frequency and estimated weekly mileage, while also accounting for customers' self-assessed fitness scores.
+The dataset source file can found through the following link:
+### Click to view 👇:
 
-----
+[![Data_link](https://github.com/seandhan/image_database/blob/main/Data-LINK-.svg)](https://github.com/seandhan/Cardio-Equipment-Sales/blob/main/CardioEqptSales.csv)
 
-## Project Objectives
+The cardio fitness dataset contains 9 variables. The data dictionary and key observations are shown below:
 
-1. **Demographic Insights**: Our primary objective is to gain a deep understanding of CardioGood's diverse customer base. This includes exploring customer demographics, comprising age, gender, education, and marital status, and drawing insightful comparisons across purchasers of the three treadmill models.
+<details>
+<summary>Data Dictionary</summary>
+<br>
+  
+1. **Product** - the model no. of the treadmill
+2. **Age** - in no of years, of the customer
+3. **Gender** - of the customer
+4. **Education** - in no. of years, of the customer
+5. **Marital Status** - of the customer
+6. **Usage** - Avg. # times the customer wants to use the treadmill every week
+7. **Fitness** - Self rated fitness score of the customer (5 - very fit, 1 - very unfit)
+8. **Income** - of the customer
+9. **Miles** - expected to run
 
-2. **Income Level Analysis**: We aim to investigate whether a correlation exists between customer income levels and the specific treadmill model they choose to purchase. This relationship could inform targeted marketing strategies and customer outreach efforts.
-
-3. **Usage Patterns**: We scrutinize usage patterns to identify trends in the expected weekly usage frequencies and weekly mileage across the three treadmill product models. These insights can guide marketing and product development strategies, allowing CardioGood to cater more effectively to customer expectations.
-
-
-## Data Source
-
-Data Source: [CardioEqptSales.csv](https://github.com/seandhan/Cardio-Equipment-Sales/blob/main/CardioEqptSales.csv)
-
-----
-
-## Data Dictionary
-
-The data contains the following variables:
-* Product - the model no. of the treadmill
-* Age - in no of years, of the customer
-* Gender - of the customer
-* Education - in no. of years, of the customer
-* Marital Status - of the customer
-* Usage - Avg. # times the customer wants to use the treadmill every week
-* Fitness - Self rated fitness score of the customer (5 - very fit, 1 - very unfit)
-* Income - of the customer
-* Miles- expected to run
-----
-## Analysis
-Click [HERE](https://github.com/seandhan/CardioEquipmentSales/blob/main/CardioEquipmentSalesEDA.ipynb) to view the analysis.
-
-----
-## Data Exploration and Understanding
-
-In this section, we outline the steps taken to explore and understand the CardioGood sales dataset. A thorough data exploration process is essential to derive meaningful insights and lay the foundation for subsequent data analysis.
+</details>
 
 
-### Data Overview
-
-The first step was to gain a comprehensive overview of the dataset. This involved:
-
-- Loading the dataset and performing basic data checks to ensure data integrity.
-- Examining the structure of the dataset, including the number of rows and columns.
-- Identifying the types of variables, including categorical and numerical, to inform subsequent analysis.
-
-### Univariate Analysis
-
-Univariate analysis focuses on individual variables to understand their distributions, statistics, and characteristics. For the CardioGood dataset, we performed the following:
-
-- **Categorical Variables:** We calculated the frequency distribution for categorical variables, such as Product, Gender, and MaritalStatus, to identify dominant categories.
-- **Numerical Variables:** We conducted statistical analysis on numerical variables, including Age, Education, Usage, Fitness, Income, and Miles. This included measures of central tendency and dispersion, as well as visualization to understand their distributions.
-
-### Bivariate Analysis
-
-Bivariate analysis explores relationships and associations between pairs of variables. In our analysis, we examined the relationships between variables with a particular focus on:
-
-- **Demographics vs. Product:** We investigated how demographic variables (age, gender, education, and marital status) related to the choice of treadmill product (TM195, TM498, TM798).
-- **Income vs. Product:** We explored the association between customer income levels and the specific treadmill model purchased, providing insights into the income-product relationship.
-- **Usage and Mileage:** We analyzed trends in expected usage frequencies and weekly mileage across the three product models to uncover distinct usage profiles associated with each.
-
-### Data Visualization
-
-Data visualization played a vital role in understanding the data. We employed various charts, plots, and graphs to visually represent distributions, trends, and relationships. These visualizations made complex data more accessible and enhanced our ability to derive insights.
-
-### Data Cleaning and Preprocessing
-
-Throughout the exploration process, we identified and addressed any data cleaning and preprocessing tasks. This included handling missing values, removing duplicates, and ensuring data consistency. Clean, reliable data is critical for accurate analysis and interpretation.
-
-By thoroughly exploring and understanding the data, we gained valuable insights into customer demographics, product preferences, and usage patterns. These insights form the foundation for the subsequent data analysis and decision-making processes.
-
-----
-## Key Observations
-
-### Data Completeness and Structure:
+<details>
+<summary>Key Observations</summary>
+<br>
 
 - The dataset is well-structured with 180 rows and 9 columns, including categorical and numerical variables.
 - All columns have complete data with no missing values.
 
-### Product Preferences:
+</details>
 
-- The "TM195" treadmill is the most popular choice among customers, followed by TM498 and TM798.
-- Male customers are more frequent purchasers than females, and those in partnered relationships show a higher buying frequency.
 
-### Income and Demographics:
+### Click to view 👇:
 
-- Older customers tend to have higher incomes.
-- Higher education is strongly correlated with higher incomes, indicating greater earning potential.
-- Gender differences: Male customers generally earn more income than female customers.
+[![Data Exploration](https://github.com/seandhan/image_database/blob/main/Solution-Dataset%20Exploration-.svg)](https://github.com/seandhan/Cardio-Equipment-Sales/blob/main/Data%20Exploration/Readme.md)
 
-### Usage Patterns:
 
-- Customers planning to use treadmills more frequently tend to rate themselves as fitter.
-- The TM798 model is preferred by fitness enthusiasts, while the TM195 is chosen by those planning lighter usage.
-- Partnered customers plan to use their treadmills more often than single customers.
 
-### Correlations:
-
-- Several meaningful correlations exist, such as a positive relationship between age and income and positive correlations between education, income, fitness, usage, and miles with the TM798 model.
-- Male customers have a preference for the TM798 model.
-
-### Product Sales and Gender:
-
-- Male customers are more likely to purchase the TM798 model than females.
-- The TM195 model is equally distributed between male and female customers.
-
-### Product Preferences by Gender:
-
-- Female customers who buy the TM798 model expect to run more miles on average compared to male customers
 ----
-## Recommendations
+
+## 📊 Exploratory Data Analysis <a name = "exploratory-data-analysis"></a>
+
+The main observations from the dataset are depicted below
+
+<details>
+<summary>Main Observations</summary>
+<br>
+
+Product Preferences:
+* The "TM195" treadmill is the most popular choice among customers, followed by TM498 and TM798.
+* Male customers are more frequent purchasers than females, and those in partnered relationships show a higher buying frequency.
+
+Income and Demographics:
+* Older customers tend to have higher incomes.
+* Higher education is strongly correlated with higher incomes, indicating greater earning potential.
+* Gender differences: Male customers generally earn more income than female customers.
+
+Usage Patterns:
+* Customers planning to use treadmills more frequently tend to rate themselves as fitter.
+* The TM798 model is preferred by fitness enthusiasts, while the TM195 is chosen by those planning lighter usage.
+* Partnered customers plan to use their treadmills more often than single customers.
+
+Correlations:
+* Several meaningful correlations exist, such as a positive relationship between age and income and positive correlations between education, income, fitness, usage, and miles with the TM798 model.
+* Male customers have a preference for the TM798 model.
+
+Product Sales and Gender:
+* Male customers are more likely to purchase the TM798 model than females.
+* The TM195 model is equally distributed among male and female customers.
+
+Product Preferences by Gender:
+* Female customers who buy the TM798 model expect to run more miles on average compared to male customers
+
+</details>
+
+Data visualisation played a vital role in understanding the data. We employed various charts, plots, and graphs to visually represent distributions, trends, and relationships. These visualisations made complex data more accessible and enhanced our ability to derive insights. These visualizations can be seen here.
+
+### Click to view 👇:
+
+[![Exploratory Data Analysis](https://github.com/seandhan/image_database/blob/main/Solution-Exploratory%20Data%20Analysis-.svg)](https://github.com/seandhan/Cardio-Equipment-Sales/blob/main/Exploratory%20Data%20Analysis/Readme.md)
+
+
+----
+
+## 🚀 Business Questions <a name = "business-questions"></a>
+
+The following business questions will be addressed in the analysis
+
+1. **How do customer demographics (age, gender, education, marital status) compare across purchasers of the 3 treadmill models?**
+2. **Is there a relationship between customer income level and the treadmill model purchased?**
+3. **Do trends emerge in the expected usage frequencies and weekly mileage across the 3 product models?**
+
+### Click to view 👇:
+
+[![Solution-Business Questions](https://github.com/seandhan/image_database/blob/main/Solution-Business%20Questions-.svg)](https://github.com/seandhan/Cardio-Equipment-Sales/blob/main/Business%20Questions/Readme.md)
+
+----
+
+## ✨ Recommendations <a name = "recommendations"></a>
 
 ### Demographic Insights
 
@@ -175,13 +157,33 @@ By thoroughly exploring and understanding the data, we gained valuable insights 
 >Similar trends were seen for expected mileage. Average miles per week for TM195 customers peaked at 20-30. TM498 buyers saw a moderate uptick in planned mileage to 30-40 weekly miles. For TM798, average miles jumped substantially to 50+ miles per week, with some customers expecting to log over 100 miles.
 >
 >These insights paint a picture of three distinct user profiles attached to each model. The TM195 appeals to casual walkers or light joggers. The TM498 suits users looking for consistency in moderate running. And the TM798 is optimized for enthusiasts training at high mileages
+---
 
-----
-## Contact Information
+
+## 📗 Notebooks <a name = "notebooks"></a>
+
+The Notebook for the "Data Exploration" can be accessed below:
+
+### Click to view 👇:
+
+[![DataExp Notebook](https://github.com/seandhan/image_database/blob/main/Notebook-Dataset%20Exploration-.svg)](https://github.com/seandhan/Cardio-Equipment-Sales/blob/main/Notebooks/Data%20Exploration.ipynb)
+
+
+The Notebook for the "Exploratory Data Analysis" can be accessed below:
+
+### Click to view 👇:
+
+[![Exploratory Data Analysis](https://github.com/seandhan/image_database/blob/main/Notebook-Exploratory%20Data%20analysis-.svg)](https://github.com/seandhan/Cardio-Equipment-Sales/blob/main/Notebooks/EDA.ipynb)
+
+The Notebook for the "Business Questions" can be accessed below:
+
+[![Business Questions](https://github.com/seandhan/image_database/blob/main/Notebook-Business%20Questions-.svg)](https://github.com/seandhan/Cardio-Equipment-Sales/blob/main/Notebooks/Business%20Questions.ipynb)
+
+---
+
+## 📧 Contact Information <a name = "contact-information"></a>
 
 - Email: [sean_dhanasar@msn.com](mailto:sean_dhanasar@msn.com)
 - LinkedIn: [Sean Dhanasar](https://www.linkedin.com/in/sdhanasar)
 
-[//]: # (Include your contact information and links to your professional profiles)
-[//]: # (LinkedIn, portfolio website, email, etc.)
 
